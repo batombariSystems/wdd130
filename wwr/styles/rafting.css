@@ -84,3 +84,7 @@ h1 {
     width: 125px;
 
 }
+
+.hero article {
+    position: absolute;
+}
