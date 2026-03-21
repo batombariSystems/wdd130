@@ -62,6 +62,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    position: absolute;
 }
 
 h1 {
