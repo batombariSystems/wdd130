@@ -11,11 +11,7 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
+/* GLOBAL RESET */
 * {
     margin: 0;
     padding: 0;
@@ -27,22 +23,57 @@ body {
     color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    /* logo column + nav column */
+    align-items: center;
+    padding: 8px 16px;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    position: absolute;
+header img.logo {
+    width: 180px;
+    height: auto;
+}
+
+/* ===== NAVIGATION: HORIZONTAL AND RIGHT-ALIGNED ===== */
+header nav {
+    display: flex;
+    /* horizontal layout */
+    justify-content: flex-end;
+    /* shift links to the right */
+    align-items: center;
+    /* vertically align with logo */
+}
+
+header nav ul {
+    list-style: none;
+    /* remove bullets */
+    display: flex;
+    /* horizontal layout of links */
+    gap: 24px;
+    /* spacing between links */
+    margin: 0;
+    /* remove default ul margin */
+    padding: 0;
+    /* remove default ul padding */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* remove underline */
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
     color: var(--secondary-color);
+    /* hover effect */
 }
 
-nav,
+/* SECTIONS AND TEXT */
 p,
 section,
 article {
@@ -50,10 +81,13 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
+/* HERO SECTION */
 .hero {
     position: relative;
 }
@@ -62,10 +96,9 @@ article {
     display: block;
     width: 100%;
     height: auto;
-
 }
 
-h1 {
+h1.hero-title {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -77,8 +110,44 @@ h1 {
 }
 
 .hero article img {
-    position: absolute;
     float: right;
     width: 125px;
+    margin: 0 0 10px 15px;
+}
 
+/* ADVENTURES SECTION */
+.adventures {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adventures figure {
+    text-align: center;
+    margin: 0;
+}
+
+.adventures img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.socialmedia a img {
+    width: 32px;
+    height: 32px;
 }
