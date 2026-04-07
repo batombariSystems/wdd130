@@ -23,7 +23,8 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff;/% shorthand for white %/
+    color: #fff;
+    /* shorthand for white */
 }
 
 h1 {
@@ -82,7 +83,7 @@ p {
 }
 
 header,
-grid,
+.grid,
 footer {
     max-width: 840px;
     margin: 0 auto;
