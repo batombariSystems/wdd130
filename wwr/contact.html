@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Co.</title>
+    <meta name="description"
+      content="Contact White Water Rafting Co. for inquiries, reservations, and suggestions.">
+    <meta name="author" content="Batombari Nyienakuna">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Co. Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- COMPANY INFO -->
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p><strong>Phone:</strong> +1 999 999 9999</p>
+            <p><strong>Email:</strong> info@whitewater.com</p>
+        </section>
+
+        <!-- MAP AND FORM -->
+        <section class="contact-layout">
+
+            <!-- GOOGLE MAP -->
+            <div class="map-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509449!2d-122.42177868468193!3d37.77492927975979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814d2d1a3d4f%3A0x2f3c0a1e1a5b6b7c!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1710000000000"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- FORM -->
+            <div class="form-box">
+                <form class="contact-form" action="#" method="post">
+
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your name"
+                      required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type your message here..." required></textarea>
+
+                    <label class="newsletter">
+                        <input type="checkbox" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
+
+                </form>
+            </div>
+
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee Profile - Lead River Guide">
+                    <figcaption><strong>John Rivers</strong><br>Lead River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee Profile - Reservation Manager">
+                    <figcaption><strong>Sarah White</strong><br>Reservation Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee Profile - Safety Instructor">
+                    <figcaption><strong>Michael Stone</strong><br>Safety Instructor</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 White Water Rafting Co. | Batombari Nyienakuna</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
