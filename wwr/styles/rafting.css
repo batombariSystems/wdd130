@@ -138,6 +138,7 @@ h1.hero-title {
 footer {
     width: 840px;
     margin: 0 auto;
+    padding: 16px;
 }
 
 .socialmedia {
@@ -265,4 +266,9 @@ footer {
     .contact-layout {
         grid-template-columns: 1fr;
     }
+}
+
+main {
+    margin: 840px;
+    margin: 0 auto;
 }
